@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <br>
+    <p>Open up the Developer Option within your Browser!</p>
+    <script>
+        var array=[0,1,2,3,4,5,6,7,8,9];
+        console.log(array);
+        document.write(array)
+
+        //push add an element to the array at the last place
+        array.push(20);
+        console.log("After push:",array);
+
+        //pop remove the last element out of the array
+        array.pop();
+        console.log("After pop:",array);
+
+        //Shift removes the first element
+        array.shift();
+        console.log("After Shift",array);
+
+        //unshift adds an Element to the first place
+        array.unshift(33);
+        console.log("Array after unshift",array);
+
+        //length of your array
+        console.log("Length of your Array",array.length);
+        
+    </script>
+</body>
+</html>
