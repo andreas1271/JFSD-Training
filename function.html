@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCtion</title>
+</head>
+<body>
+    <h1>Open up the developer console within your Browser</h1>
+    <script>
+        //simplest function
+        function test(){
+            console.log("Hello function, you are welcome. Make yourself at home.");
+        }
+
+        test();
+
+        //parametrized function
+        function add(a,b){
+            var num1=a+b;
+            var num2=a-b;
+            return num1*num2;
+        }
+
+        let result=add(3,2);
+        console.log("Result: ",result);
+
+      //function returning function
+      function multiply(a,b){
+        var result=a*b;
+        return function(){ console.log("result of FRF:",result)};
+        }
+   
+        var funct=multiply(3,4);
+        funct();
+
+    </script>
+</body>
+</html>
