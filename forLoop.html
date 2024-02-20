@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR LOOP</title>
+</head>
+<body>
+    <h1>For Loop Example with Natural Numbers</h1>
+    <script>
+        let num=50;
+
+        document.write("<h2>Naturale Born ODD Numbers up to 50</h2><br>");
+
+        for(let i=1;i<=num;i++){
+            if(i%2!=0){
+                document.write(`Number is ${i} <br>`);
+            }
+        }
+    </script>
+
+    <script>
+        let num1=50;
+
+        document.write("<h2>Naturale Born ODD Numbers down to 0 from 50</h2><br>");
+
+        for(let i=num1;i>=0;i--){
+            if(i%2!=0){
+                document.write(`Number is ${i} <br>`);
+            }
+        }
+    </script>
+    
+    <script>
+        let num2=prompt("Give me all your Numbers:");
+
+        document.write("<h2>Naturale Born ODD Numbers up to "+num2+ "</h2><br>");
+
+        for(let i=1;i<=num2;i++){
+            if(i%2!=0){
+                document.write(`Number is ${i} <br>`);
+            }
+        }
+    </script>
+
+
+</body>
+</html>
