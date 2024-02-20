@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <script>
+        var num1=prompt("Enter your 1st Number: ");
+        var num2=prompt("Enter your 2nd Number: ");
+        var opera=prompt("Enter operator like: + - / * = > <:" );
+
+        var x=parseInt(num1);
+        var y=parseInt(num2);
+
+        document.write("Your 1st Number is: "+num1+"<br>");
+        document.write("Your 2nd Number is: "+num2+"<br>");
+        document.write("Your Operator is: "+opera+"<br>");
+
+    function calculate(x,y){
+        if(opera=='+'){
+            return x+y;
+        }
+        if(opera=='-'){
+            return x-y;
+        }
+        if(opera=='*'){
+            return x*y;
+        }
+        if(opera=='/'){
+            return x/y;
+        }
+        if(opera=='='){
+            return x==y;
+        }
+        if(opera=='<'){
+            return x<y;
+        }
+        if(opera=='>'){
+            return x>y;
+        }
+
+    }
+
+    var result=calculate(x,y);
+    document.write("Result is : ",result);
+
+    </script>
+</body>
+</html>
