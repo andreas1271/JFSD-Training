@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Objects</title>
+</head>
+<body>
+
+    <script>
+        const products=[
+            {id:1,name:'Kugelschreiber',price:1.10,rating:3.5},
+            {id:2,name:'Chromatic Füllfederhalter',price:80,rating:5.0},
+            {id:3,name:'Radiergummi',price:0.45,rating:4.9},
+            {id:4,name:'Premium Lineal',price:20,rating:3.8},
+            {id:5,name:'Stecheisensatz',price:60,rating:4.8},
+            {id:6,name:'Eimer Wasser',price:25,rating:4.9},
+            {id:7,name:'LED Einbauleuchte',price:40,rating:5.0},
+            {id:8,name:'Goldbarren aus Blei',price:100,rating:4.4},
+            {id:9,name:'Taschenbuchausgabe: Wie mache ich aus Scheiße Geld',price:120,rating:5.0},
+            {id:10,name:'Hypnose für Katzen',price:90,rating:5.0},
+
+        ]
+
+
+        for(let p of products){
+            for(let key in p){
+                document.write(key + " "+p[key]+"<br>");
+            }
+
+            document.write("------------------------------------<br>");
+        }
+    </script>
+    
+</body>
+</html>

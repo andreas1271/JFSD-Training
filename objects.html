@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user={fname: "Andreas",lname:"QueenOfSpades", age:"53", email:"andreas@hello.net", country:"Germany"};
+        console.log("Name: "+user.fname+" "+ user.lname);
+        document.write("Age: "+user.age+" Country: "+ user.country+"<br>");
+        document.write("###################<br>");
+        for(let key in user){
+            document.write(key+" "+user[key]+"<br>");
+        }
+    </script>
+</body>
+</html>
