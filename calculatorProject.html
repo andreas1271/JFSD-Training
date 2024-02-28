@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+<body>
+    <h1>Calculator with two numbers</h1>
+    First Number: <input id="firstN"><br><br>
+    Second Numver: <input id="secondN"><br><br>
+    
+    <button onclick="add()">Find Sum</button><br><br>
+    <button onclick="sub()">Find Difference</button><br><br>
+    <button onclick="multiply()">Find Product</button><br><br>
+    <button onclick="divide()">Find Reminer</button><br><br>
+    
+    Result: <input id="result">
+
+    <script>
+        function add(){
+            var first,second;
+            first=Number(document.getElementById("firstN").value);
+            second=Number(document.getElementById("secondN").value);
+            document.getElementById("result").value=first+second;
+        }
+        function sub(){
+            var first,second;
+            first=Number(document.getElementById("firstN").value);
+            second=Number(document.getElementById("secondN").value);
+            document.getElementById("result").value=first-second;
+        }
+        function multiply(){
+            var first,second;
+            first=Number(document.getElementById("firstN").value);
+            second=Number(document.getElementById("secondN").value);
+            document.getElementById("result").value=first*second;
+        }
+        function divide(){
+            var first,second;
+            first=Number(document.getElementById("firstN").value);
+            second=Number(document.getElementById("secondN").value);
+            document.getElementById("result").value=first/second;
+        }
+    </script>
+    
+</body>
+</html>
