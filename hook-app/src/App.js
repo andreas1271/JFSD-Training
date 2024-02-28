@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import UseEffectDemo from './components/UseEffectsDemo';
 import UseTimer from './components/Timer'
